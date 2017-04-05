@@ -1,0 +1,62 @@
+@import "../../variables.css";
+
+.row {
+  width: 100%;
+  clear: fix;
+}
+
+.limiter {
+  width: 90%;
+  max-width: map(breakpoints, max);
+  margin: 0 auto;
+  clear: fix;
+  padding: var(--section-padding);
+}
+
+.padding {
+  padding: var(--section-padding--small);
+}
+
+.column {
+  lost-column: 1/3;
+}
+
+.grey {
+  background-color: var(--fourth-color);
+
+  & .title {
+    text-align: center;
+  }
+
+  & .title::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.image {
+  & svg {
+    max-width: 35em;
+    float: right;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .column {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  .column:not(:first-child) {
+    width: calc(50% - 30px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .column:not(:first-child) {
+    lost-column: 1/1;
+  }
+
+  .videos .column {
+    lost-column: 1/2 !important;
+  }
+}

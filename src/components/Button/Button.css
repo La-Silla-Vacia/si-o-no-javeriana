@@ -1,0 +1,12 @@
+@import "../../variables.css";
+
+.container {
+  background-color: var(--highlight-color);
+  text-decoration: none;
+  font-family: var(--family-special);
+  font-weight: 700;
+  font-style: italic;
+  padding: .5em 1em;
+  color: var(--secondary-color);
+  border-radius: var(--default-radius);
+}

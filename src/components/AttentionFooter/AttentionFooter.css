@@ -1,0 +1,43 @@
+@import "../../variables.css";
+
+.container {
+  width: 100%;
+  background-color: var(--secondary-color);
+  position: relative;
+}
+
+.triangle {
+  width: 4em;
+  height: 4em;
+  background-color: var(--secondary-color);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.limiter {
+  width: 90%;
+  max-width: map(breakpoints, max);
+  margin: 0 auto;
+  clear: fix;
+  padding: var(--section-padding--small);
+  color: #fff;
+  text-align: center;
+
+  h4 {
+    margin-bottom: .5em;
+  }
+
+  p {
+    max-width: 30em;
+    margin: 1em auto;
+  }
+
+  footer {
+    margin-top: 2em;
+    a {
+      font-size: 1.25em;
+    }
+  }
+}

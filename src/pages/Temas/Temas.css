@@ -1,0 +1,14 @@
+@import "../../variables.css";
+
+.row {
+  width: 100%;
+  clear: fix;
+}
+
+.limiter {
+  width: 90%;
+  max-width: map(breakpoints, max);
+  margin: 0 auto;
+  clear: fix;
+  padding: var(--section-padding);
+}

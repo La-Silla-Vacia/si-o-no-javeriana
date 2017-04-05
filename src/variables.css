@@ -1,0 +1,18 @@
+:root {
+  --theme-color: #5053b1;
+  --highlight-color: #ffc62b;
+  --secondary-color: #3c3f63;
+  --thirtiary-color: #2a2c3e;
+  --fourth-color: #f4f5f9;
+  --fifth-color: #5B5D62;
+
+  --family-sans: 'Roboto Condensed', sans-serif;
+  --family-special: 'Roboto Slab', sans-serif;
+  --family-plain: Helvetica, Roboto, sans-serif;
+  --family-serif: Georgia, Times new Roman, serif;
+
+  --section-padding: 4em 0;
+  --section-padding--small: 3em 0;
+  --section-padding--large: 6em 0 4em;
+  --default-radius: map(borders, width-thicker);
+}

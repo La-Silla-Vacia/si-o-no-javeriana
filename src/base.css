@@ -1,0 +1,51 @@
+@import "./variables.css";
+
+.container {
+
+  & h2 {
+    font-family: var(--family-special);
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: .025em;
+    line-height: 1.15;
+
+    &::after {
+      content: '';
+      width: 2em;
+      height: .5rem;
+      background-color: var(--highlight-color);
+      display: block;
+      margin-top: .4em;
+    }
+  }
+
+  & h3 {
+    font-family: var(--family-special);
+    color: var(--secondary-color);
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: .25em;
+  }
+
+  & h4 {
+    font-family: var(--family-special);
+    font-size: 2.25em;
+  }
+
+  & p {
+    font-family: var(--family-sans);
+    font-size: 1.1em;
+    font-weight: lighter;
+    line-height: 1.5;
+    margin-bottom: 1em;
+  }
+
+  & a {
+    &:focus {
+      text-decoration: none;
+      color: var(--theme-color);
+    }
+  }
+}

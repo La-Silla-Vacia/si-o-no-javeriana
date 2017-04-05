@@ -1,0 +1,5 @@
+@reset-global pc;
+
+:global(#footer) {
+  margin-top: 0;
+}
